@@ -12,16 +12,13 @@ for list in lists:
 
 print(expected_list)
 
-#new_list = [lists for list in lists if list < 10]
-#print(new_list.append())
+new_list = [list for list in lists if list < 10]
+print(new_list)
 
 
 # Exercise 2
 
 names = ['connor', 'connor', 'bob', 'connor', 'evan', 'max', 'evan', 'bob', 'kevin']
-
-names_1 = []
-
 
 def long_words(n, names):
     names_1 = []
@@ -31,4 +28,8 @@ def long_words(n, names):
             names_1.append(name)
     return (names_1)
 
-print(long_words(3, names))
+expected_names = long_words(3, names)
+print(expected_names)
+
+new_names = [name for name in names if len(name) > 3]
+print(new_names)
