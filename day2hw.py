@@ -1,7 +1,7 @@
 # Exercise 1
 # Use the following list - [1,11,14,5,8,9]
 
-lists = [1,11,14,5,8,9]
+lists = [1, 11, 14, 5, 8, 9]
 
 expected_list = []
 
@@ -12,8 +12,8 @@ for list in lists:
 
 print(expected_list)
 
-expected_list = [lists for list in lists if list < 10]
-print(expected_list.append())
+#new_list = [lists for list in lists if list < 10]
+#print(new_list.append())
 
 
 # Exercise 2
@@ -22,14 +22,13 @@ names = ['connor', 'connor', 'bob', 'connor', 'evan', 'max', 'evan', 'bob', 'kev
 
 names_1 = []
 
+
 def long_words(n, names):
-	names_1 = []
-	names = str.split(" ")
-	for name in names:
-		if len(name) > 3:
-			names_1.append(names)
-	return(names)
-print(names_1)
- 
-names = [names for name in names if len(name) > 3 return]
-print(names_1.append)
+    names_1 = []
+    for name in names:
+
+        if len(name) > n:
+            names_1.append(name)
+    return (names_1)
+
+print(long_words(3, names))
