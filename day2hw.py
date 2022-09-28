@@ -25,11 +25,13 @@ def long_words(n, names):
     for name in names:
 
         if len(name) > n:
-            names_1.append(name)
+            names_1.append(name.capitalize())
     return (names_1)
 
 expected_names = long_words(3, names)
 print(expected_names)
 
-new_names = [name for name in names if len(name) > 3]
+new_names = [name.capitalize() for name in names if len(name) > 3]
 print(new_names)
+
+# Brian helped me with capitalization 
